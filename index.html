@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Калькулятор</h1>
+<br>
+    <label for="num1"></label><input id="num1" class="form" placeholder="Введите первое число"/>
+<br>
+<div id="operator_buttons">
+    <button id="+" onclick="operator = '+'; selectedBtn('+')">+</button>
+    <button id="-" onclick="operator = '-'; selectedBtn('-');">-</button>
+    <button id="*" onclick="operator = '*'; selectedBtn('*')">x</button>
+    <button id="/" onclick="operator = '/'; selectedBtn('/')">:</button>
+</div>
+<br>
+    <label for="num2"></label><input id="num2" class="form" placeholder="Введите второе число"/>
+<br>
+    <button type="button" onclick="counting()">Посчитать</button>
+    <br>
+    <br>
+    <p id="result" class="form"></p>
+<script src="js/script.js"></script>
+</body>
+</html>
